@@ -1,62 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
 html, body {
   height: 100%;
 }
 
-h1 {
-  font-size: 1.5em;
+body {
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png)
+}
+
+/* Start of header/nav css */
+header {
+  background: white;
+  height: 100px;
 }
 
 nav {
   justify-self: end;
 }
 
-label {
-  display:block;
-}
-input {
-  display:block;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 100%;
+h1 {
+  font-size: 1.5em;
 }
 
-textarea {
-  margin-top: 1em;
-}
-
-.bio_image {
-  max-height: 200px;
-  margin-right: 2em;
-  float: left;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-around;
-}
-
-.menu li {
-  margin-right: 1em;
-}
-
-.my_button {
-  display: block;
-  margin-top: 1em;
-  font-size: 1.2em;
-}
-/* header {
-  padding-left: 10em;
-  padding-right: 10em;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100px;
+header > h1 {
+  font-size: 2em;
+  width: 250px;
+  background: #4AAAA5;
+  height: 100%;
   align-items: center;
-  background: white;
-} */
+  justify-content: center;
+  display: grid;
+}
 
-header {
-  background: white;
-  height: 100px;
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: #666666;
+  border-top: 5px solid #4AAAA5;
+  width: 100%;
+  height: 50px;
+  display: grid;
+  align-items: center;
 }
 
 .header_nav_content {
@@ -79,37 +69,6 @@ header {
   color: white;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  background: #666666;
-  border-top: 5px solid #4AAAA5;
-  width: 100%;
-  height: 50px;
-  display: grid;
-  align-items: center;
-}
-
-body {
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png)
-}
-
-header > h1 {
-  font-size: 2em;
-  width: 250px;
-  background: #4AAAA5;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -126,6 +85,47 @@ header > h1 {
   margin-right:1em;
 }
 
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 1em;
+}
+
+/* End of header/nav css */
+
+/* start of contact form css */
+label {
+  display:block;
+}
+input {
+  display:block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+textarea {
+  margin-top: 1em;
+}
+
+/* end of contact form css */
+
+.bio_image {
+  max-height: 200px;
+  margin-right: 2em;
+  float: left;
+}
+
+.my_button {
+  display: block;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+/* main content area css */
 .main_content {
   width: 960px;
   margin-left: auto;
@@ -154,8 +154,9 @@ header > h1 {
   color: #ADA6A6;
 }
 
+/* end of container css  */
 
-/* port css */
+/* portfolio css */
 
 .grid_container {
   position: relative;
