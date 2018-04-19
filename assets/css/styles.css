@@ -2,22 +2,88 @@ html, body {
   height: 100%;
 }
 
-header {
+h1 {
+  font-size: 1.5em;
+}
+
+nav {
+  justify-self: end;
+}
+
+label {
+  display:block;
+}
+input {
+  display:block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+textarea {
+  margin-top: 1em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  margin-right: 1em;
+}
+
+.my_button {
+  display: block;
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+/* header {
   padding-left: 10em;
   padding-right: 10em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100px;
   align-items: center;
-  background: red;
+  background: white;
+} */
+
+header {
+  background: white;
+  height: 100px;
+}
+
+.my_box {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+}
+
+.my_box > h1 {
+  height: 100%;
+  width: 200px;
+  background: #4aaaa5;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   text-align: center;
-  background: red;
-  border-bottom: 2px solid green;
+  background: #666666;
+  border-top: 5px solid #4AAAA5;
   width: 100%;
   height: 50px;
   display: grid;
@@ -25,15 +91,16 @@ footer {
 }
 
 body {
-  background: grey;
+  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/sayagata-400px.png)
 }
 
 header > h1 {
   font-size: 2em;
-  width: 200px;
-  background: green;
+  width: 250px;
+  background: #4AAAA5;
   height: 100%;
   align-items: center;
+  justify-content: center;
   display: grid;
 }
 
@@ -41,6 +108,12 @@ header > h1 {
   display: flex;
   justify-content: flex-end;
   font-size: 1.5em;
+  color: #ADA6A6;
+}
+
+.nav_links {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav > li {
@@ -48,9 +121,11 @@ header > h1 {
 }
 
 .main_content {
-  margin-left: 10em;
-  margin-right: 10em;
-  margin-top: 5em;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-bottom: 2em;
   background: white;
   min-height: 500px;
 }
@@ -70,4 +145,5 @@ header > h1 {
 
 .text_content {
   margin: 2em 2em 2em 2em;
+  color: #ADA6A6;
 }
