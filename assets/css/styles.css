@@ -24,6 +24,12 @@ textarea {
   margin-top: 1em;
 }
 
+.bio_image {
+  max-height: 200px;
+  margin-right: 2em;
+  float: left;
+}
+
 .menu {
   display: flex;
   justify-content: space-around;
@@ -53,7 +59,7 @@ header {
   height: 100px;
 }
 
-.my_box {
+.header_nav_content {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
@@ -63,7 +69,7 @@ header {
   align-items: center;
 }
 
-.my_box > h1 {
+.header_nav_content > h1 {
   height: 100%;
   width: 200px;
   background: #4aaaa5;
@@ -130,7 +136,7 @@ header > h1 {
   min-height: 500px;
 }
 
-.box {
+.title_of_page {
   height: 100px;
   border-bottom: 2px solid black;
   display: grid;
@@ -138,12 +144,12 @@ header > h1 {
   margin-right: 2em;
 }
 
-.box > h2 {
+.title_of_page > h2 {
   align-self: center;
   font-size: 1.5em;
 }
 
-.text_content {
+.container {
   margin: 2em 2em 2em 2em;
   color: #ADA6A6;
 }
@@ -151,7 +157,7 @@ header > h1 {
 
 /* port css */
 
-.test {
+.grid_container {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,7 +177,7 @@ header > h1 {
   text-align: center;
   width: 300px;
   height: 50px;
-  background: red;
+  background: #4aaaa5;
   display: grid;
   align-items: center;
 }
